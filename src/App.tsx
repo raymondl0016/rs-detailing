@@ -7,9 +7,11 @@ import { packages } from './data/packages'
 
 const galleryImages = [
   'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
-  'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
   'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80',
+  'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
+  'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
   'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+  'https://images.unsplash.com/photo-1694678505383-676d78ea3b96?w=800&q=80',
 ]
 
 const stories = [
@@ -96,13 +98,13 @@ export default function App() {
                   {heroThumbs.map((src, i) => (
                     <button
                       type="button"
-                      key={src}
+                      key={`hero-thumb-${i}`}
                       onClick={() => setHeroGalleryIndex(i)}
                       className={`aspect-[4/3] overflow-hidden rounded-lg ring-offset-2 ring-offset-surface-2 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                         heroGalleryIndex === i ? 'ring-2 ring-accent' : 'opacity-90 hover:opacity-100'
                       }`}
                       aria-label={`Show gallery image ${i + 1}`}
-                      aria-pressed={heroGalleryIndex === i}
+                      aria-current={heroGalleryIndex === i}
                     >
                       <img src={src} alt="" className="h-full w-full object-cover" />
                     </button>
@@ -247,8 +249,8 @@ export default function App() {
               Placeholder grid — swap for your Instagram or before/afters.
             </p>
             <div className="mt-10 columns-2 gap-3 sm:columns-3 lg:gap-4">
-              {galleryImages.map((src) => (
-                <div key={src} className="mb-3 break-inside-avoid overflow-hidden rounded-xl lg:mb-4">
+              {galleryImages.map((src, i) => (
+                <div key={`gallery-${i}`} className="mb-3 break-inside-avoid overflow-hidden rounded-xl lg:mb-4">
                   <img src={src} alt="" className="w-full object-cover transition hover:scale-105" />
                 </div>
               ))}
