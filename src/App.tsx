@@ -50,10 +50,10 @@ export default function App() {
           <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-24 md:px-6 lg:flex-row lg:items-center lg:gap-16">
             <div className="flex-1">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-                Mobile + shop service
+                Mobile service
               </p>
               <h1 className="mt-4 text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl">
-                Get five-star detailing at home or at our shop
+                Get car detailing at your home
               </h1>
               <p className="mt-6 max-w-xl text-lg text-white/75">
                 We restore, protect, and maintain — not just vacuum and rinse. Fully equipped pros, background-checked
@@ -73,7 +73,7 @@ export default function App() {
                   View packages
                 </a>
                 <a
-                  href="tel:+15035550199"
+                  href="tel:+6265005486"
                   className="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
                 >
                   Call now
@@ -81,7 +81,7 @@ export default function App() {
               </div>
               <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-muted">
                 <span className="inline-flex items-center gap-2 text-white/80">
-                  <StarRow /> Trusted locally since 2015
+                  <StarRow /> Trusted locally
                 </span>
                 <span>Licensed &amp; insured</span>
               </div>
