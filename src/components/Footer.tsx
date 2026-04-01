@@ -1,15 +1,19 @@
 const areas = [
-  'Metro core',
-  'West suburbs',
-  'East communities',
-  'North counties',
-  'South corridor',
-  'Neighboring state line',
+  'Orange County',
+  'Irvine',
+  'Laguna Niguel  ',
+  'Laguna Hills',
+  'Mission Viejo',
+  'New Port Beach',
+  'Santa Ana',
+  'Tustin',
+  'Rancho Santa Margarita',
+  'San Juan Capistrano',
+  'San Clemente',
 ]
 
 const quick = [
   ['Stories', '#stories'],
-  ['Gift cards', '#gift'],
   ['Gallery', '#gallery'],
   ['Pricing', '#packages'],
   ['Careers', '#contact'],
@@ -21,21 +25,16 @@ export function Footer() {
     <footer id="contact" className="border-t border-white/10 bg-surface-2 py-16">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2 lg:grid-cols-4 md:px-6">
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-accent">Shop</p>
-          <p className="mt-3 text-sm text-white/90">By appointment — call before visiting so we can greet you.</p>
-          <p className="mt-4 text-sm text-muted">
-            10950 Example Blvd, Suite 250
-            <br />
-            Beaverton, OR 97005
-          </p>
+          <p className="text-xs font-bold uppercase tracking-widest text-accent">Contact Info</p>
+          {/* <p className="mt-3 text-sm text-white/90">By appointment - call us for a quote</p> */}
           <p className="mt-4 text-sm font-medium text-white">
-            <a href="tel:+15035550199" className="hover:text-accent">
-              (503) 555-0199
+            <a href="tel:+16265005486" className="hover:text-accent">
+              (626) 500-5486
             </a>
           </p>
           <p className="text-sm text-muted">
-            <a href="mailto:hello@rsdetailing.example" className="hover:text-white">
-              hello@rsdetailing.example
+            <a href="mailto:hello@rsdetailing.com" className="hover:text-white">
+              hello@rsdetailing.com
             </a>
           </p>
         </div>
@@ -63,8 +62,8 @@ export function Footer() {
         </div>
         <div>
           <p className="text-xs font-bold uppercase tracking-widest text-accent">Hours</p>
-          <p className="mt-4 text-sm text-muted">Phones &amp; booking: daily 8:00am – 8:00pm</p>
-          <p className="mt-2 text-sm text-muted">Shop: Mon–Sun 8:30am – 6:00pm (appointment)</p>
+          <p className="mt-4 text-sm text-muted">Phones &amp; booking: </p>
+          <p className="text-sm text-muted">Monday - Friday: 9:00am - 6:00pm</p>
           <div className="mt-6 flex gap-3">
             {['instagram', 'facebook', 'youtube'].map((s) => (
               <span
@@ -78,8 +77,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 px-4 pt-8 text-center text-xs text-muted md:px-6 md:text-left">
-        © {new Date().getFullYear()} RS Detailing LLC. Demo clone for local development — replace contact details
-        with your own.
+        © {new Date().getFullYear()} RS Detailing LLC.
       </div>
     </footer>
   )

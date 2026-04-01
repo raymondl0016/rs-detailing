@@ -318,23 +318,6 @@ export default function App() {
           </div>
         </section>
 
-        <section id="gift" className="border-t border-white/10 bg-surface py-16">
-          <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-4 md:flex-row md:items-center md:justify-between md:px-6">
-            <div>
-              <h2 className="text-2xl font-bold text-white">Gift ideas</h2>
-              <p className="mt-2 max-w-xl text-muted">
-                Birthdays, graduations, holidays — send by email or print at home.
-              </p>
-            </div>
-            <a
-              href="#quote"
-              className="rounded-full border border-accent/50 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent hover:bg-accent/20"
-            >
-              Personalize a gift
-            </a>
-          </div>
-        </section>
-
         <section id="mobile" className="border-t border-white/10 bg-surface-2 py-20">
           <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center md:px-6">
             <div>

@@ -4,7 +4,6 @@ const nav = [
   {
     label: 'Car detailing',
     items: [
-      ['Gift cards', '#gift'],
       ['Mobile detailing', '#mobile'],
       ['Interior', '#packages'],
       ['Exterior', '#packages'],

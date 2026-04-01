@@ -3,7 +3,7 @@ export type FAQItem = { q: string; a: string }
 export const faqItems: FAQItem[] = [
   {
     q: 'How do I book a service?',
-    a: 'Call or text us any day 8am–8pm, use the quote form on this page, or book online. Visiting the shop? Call ahead so we can confirm we are on-site.',
+    a: 'Call or text us any day 8am–8pm, use the quote form on this page, or book online.',
   },
   {
     q: 'Can you detail at my home, office, or apartment?',
