@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Header } from './components/Header'
 import { PackageCard } from './components/PackageCard'
 import { FAQSection } from './components/FAQSection'
@@ -5,9 +6,7 @@ import { Footer } from './components/Footer'
 import { packages } from './data/packages'
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1619405399517-87b9eb781ef0?w=800&q=80',
   'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
-  'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
   'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
   'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80',
   'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
@@ -29,6 +28,9 @@ const stories = [
 ]
 
 export default function App() {
+  const [heroGalleryIndex, setHeroGalleryIndex] = useState(0)
+  const heroThumbs = galleryImages.slice(0, 3)
+
   return (
     <>
       <Header />
@@ -85,16 +87,25 @@ export default function App() {
               <div className="rounded-2xl border border-white/10 bg-surface-2/60 p-2 shadow-2xl shadow-black/50 backdrop-blur-md">
                 <div className="aspect-[4/3] overflow-hidden rounded-xl bg-surface-3">
                   <img
-                    src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=80"
+                    src={galleryImages[heroGalleryIndex]}
                     alt="Shiny vehicle hood reflecting studio lights"
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="grid grid-cols-3 gap-2 p-2">
-                  {galleryImages.slice(0, 3).map((src) => (
-                    <div key={src} className="aspect-[4/3] overflow-hidden rounded-lg">
-                      <img src={src} alt="" className="h-full w-full object-cover opacity-90 hover:opacity-100" />
-                    </div>
+                  {heroThumbs.map((src, i) => (
+                    <button
+                      type="button"
+                      key={src}
+                      onClick={() => setHeroGalleryIndex(i)}
+                      className={`aspect-[4/3] overflow-hidden rounded-lg ring-offset-2 ring-offset-surface-2 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                        heroGalleryIndex === i ? 'ring-2 ring-accent' : 'opacity-90 hover:opacity-100'
+                      }`}
+                      aria-label={`Show gallery image ${i + 1}`}
+                      aria-pressed={heroGalleryIndex === i}
+                    >
+                      <img src={src} alt="" className="h-full w-full object-cover" />
+                    </button>
                   ))}
                 </div>
               </div>
