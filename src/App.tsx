@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Header } from './components/Header'
 import { PackageCard } from './components/PackageCard'
 import { FAQSection } from './components/FAQSection'
+import { QuoteForm } from './components/QuoteForm'
 import { Footer } from './components/Footer'
 import { packages } from './data/packages'
 
@@ -346,56 +347,7 @@ export default function App() {
             <div id="quote" className="rounded-2xl border border-white/10 bg-surface p-6 shadow-xl">
               <h3 className="text-lg font-bold text-white">Get a free quote</h3>
               <p className="mt-1 text-sm text-muted">We respond fast during business hours.</p>
-              <form
-                className="mt-6 space-y-4"
-                onSubmit={(e) => {
-                  e.preventDefault()
-                }}
-              >
-                <div>
-                  <label className="text-xs font-medium text-muted" htmlFor="name">
-                    Full name
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="mt-1 w-full rounded-lg border border-white/15 bg-surface-2 px-3 py-2.5 text-sm text-white outline-none focus:border-accent"
-                    autoComplete="name"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-medium text-muted" htmlFor="email">
-                    Email *
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="mt-1 w-full rounded-lg border border-white/15 bg-surface-2 px-3 py-2.5 text-sm text-white outline-none focus:border-accent"
-                    autoComplete="email"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-medium text-muted" htmlFor="phone">
-                    Phone *
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    required
-                    className="mt-1 w-full rounded-lg border border-white/15 bg-surface-2 px-3 py-2.5 text-sm text-white outline-none focus:border-accent"
-                    autoComplete="tel"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full rounded-full bg-accent py-3 text-sm font-semibold text-surface hover:brightness-110"
-                >
-                  Start booking
-                </button>
-              </form>
+              <QuoteForm />
             </div>
           </div>
         </section>

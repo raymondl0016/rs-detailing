@@ -1,6 +1,8 @@
 # Build stage
 FROM node:20-alpine AS build
 WORKDIR /app
+ARG VITE_WEB3FORMS_ACCESS_KEY
+ENV VITE_WEB3FORMS_ACCESS_KEY=$VITE_WEB3FORMS_ACCESS_KEY
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
