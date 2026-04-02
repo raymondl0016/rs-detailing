@@ -208,7 +208,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="border-t border-white/10 bg-surface py-20">
+        {/* <section className="border-t border-white/10 bg-surface py-20">
           <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2 md:items-center md:px-6">
             <div className="order-2 md:order-1">
               <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-surface-3 shadow-xl">
@@ -241,7 +241,7 @@ export default function App() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="gallery" className="bg-surface-2 py-16">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
