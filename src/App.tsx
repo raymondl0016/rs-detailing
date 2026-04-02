@@ -332,7 +332,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="stories" className="border-t border-white/10 bg-surface py-16">
+        {/* <section id="stories" className="border-t border-white/10 bg-surface py-16">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <div className="flex items-end justify-between gap-4">
               <h2 className="text-2xl font-bold text-white">Latest stories</h2>
@@ -348,7 +348,7 @@ export default function App() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <FAQSection />
       </main>

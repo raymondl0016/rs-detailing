@@ -13,10 +13,10 @@ const areas = [
 ]
 
 const quick = [
-  ['Stories', '#stories'],
+  // ['Stories', '#stories'],
   ['Gallery', '#gallery'],
   ['Pricing', '#packages'],
-  ['Careers', '#contact'],
+  // ['Careers', '#contact'],
   ['FAQ', '#faq'],
 ]
 
