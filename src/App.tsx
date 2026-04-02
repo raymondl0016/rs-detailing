@@ -15,20 +15,20 @@ const galleryImages = [
   'https://images.unsplash.com/photo-1694678505383-676d78ea3b96?w=800&q=80',
 ]
 
-const stories = [
-  {
-    title: 'Maintain your car after a detail',
-    excerpt: 'Simple habits that stretch your shine and protect interior materials.',
-  },
-  {
-    title: 'Why window tint matters',
-    excerpt: 'UV, heat, and privacy — what to look for in a legal, quality install.',
-  },
-  {
-    title: 'Does detailing remove scratches?',
-    excerpt: 'What correction can and cannot do, explained in plain language.',
-  },
-]
+// const stories = [
+//   {
+//     title: 'Maintain your car after a detail',
+//     excerpt: 'Simple habits that stretch your shine and protect interior materials.',
+//   },
+//   {
+//     title: 'Why window tint matters',
+//     excerpt: 'UV, heat, and privacy — what to look for in a legal, quality install.',
+//   },
+//   {
+//     title: 'Does detailing remove scratches?',
+//     excerpt: 'What correction can and cannot do, explained in plain language.',
+//   },
+// ]
 
 export default function App() {
   const [heroGalleryIndex, setHeroGalleryIndex] = useState(0)
