@@ -3,7 +3,7 @@ export type FAQItem = { q: string; a: string }
 export const faqItems: FAQItem[] = [
   {
     q: 'How do I book a service?',
-    a: 'Call or text us any day 8am–8pm, use the quote form on this page, or book online.',
+    a: 'Call or text us any day 9am–6pm, use the quote form on this page, or book online.',
   },
   {
     q: 'Can you detail at my home, office, or apartment?',
@@ -11,7 +11,7 @@ export const faqItems: FAQItem[] = [
   },
   {
     q: 'How long does a detail take?',
-    a: 'Timing depends on package and condition. Expect roughly 2–8 hours for exterior-heavy work, 2–5 hours for interior or full details. We will give a tighter window when you book.',
+    a: 'Timing depends on package and condition. Expect roughly 1–3 hours for exterior-heavy work, 2–4 hours for interior or full details. We will give a tighter window when you book.',
   },
   {
     q: 'How long will results last?',

@@ -4,10 +4,10 @@ const nav = [
   {
     label: 'Car detailing',
     items: [
-      ['Mobile detailing', '#mobile'],
+      ['Mobile detailing', '#packages'],
       ['Interior', '#packages'],
       ['Exterior', '#packages'],
-      ['Fleets', '#contact'],
+      // ['Fleets', '#contact'],
     ],
   },
   { label: 'Ceramic coating', href: '#packages' },

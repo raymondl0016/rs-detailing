@@ -246,9 +246,6 @@ export default function App() {
         <section id="gallery" className="bg-surface-2 py-16">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <h2 className="text-center text-2xl font-bold text-white">Recent work</h2>
-            <p className="mx-auto mt-2 max-w-xl text-center text-sm text-muted">
-              Placeholder grid — swap for your Instagram or before/afters.
-            </p>
             <div className="mt-10 columns-2 gap-3 sm:columns-3 lg:gap-4">
               {galleryImages.map((src, i) => (
                 <div key={`gallery-${i}`} className="mb-3 break-inside-avoid overflow-hidden rounded-xl lg:mb-4">
@@ -266,12 +263,12 @@ export default function App() {
                 {
                   badge: 'Most popular',
                   title: 'Car detailing',
-                  lines: ['Interior & exterior', 'Deep clean + hand wash', 'Interior from $186 example'],
+                  lines: ['Interior & exterior', 'Deep clean + hand wash', 'Interior from $90'],
                 },
                 {
                   badge: 'Correction',
                   title: 'Paint polish',
-                  lines: ['Swirl reduction', 'Enhancement / correction', 'From $150 example'],
+                  lines: ['Swirl reduction', 'Enhancement / correction', 'From $50'],
                 },
                 {
                   badge: 'Long-term',
