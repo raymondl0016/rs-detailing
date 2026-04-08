@@ -37,9 +37,9 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 md:px-6">
         <a href="#" className="flex items-center gap-2 text-lg font-bold tracking-tight text-white">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-accent-dim text-surface font-extrabold">
-            RS
+            LD
           </span>
-          RS Detailing
+          LuxeDrive Detailing
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex">

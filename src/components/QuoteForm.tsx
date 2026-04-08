@@ -91,14 +91,14 @@ export function QuoteForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: 'New quote request — RS Detailing',
+          subject: 'New quote request — LuxeDrive Detailing',
           from_name: name || 'Website',
           name,
           email,
           replyto: email,
           phone,
           message: [
-            `Quote request (rs-detailing)`,
+            `Quote request (luxedrivedetailing)`,
             `Name: ${name || '—'}`,
             `Email: ${email}`,
             `Phone: ${phone}`,

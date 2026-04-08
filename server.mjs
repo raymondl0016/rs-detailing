@@ -110,5 +110,5 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(PORT, HOST, () => {
-  console.error(`RS Detailing static server listening on http://${HOST}:${PORT}`)
+  console.error(`LuxeDrive Detailing static server listening on http://${HOST}:${PORT}`)
 })

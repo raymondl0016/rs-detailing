@@ -33,8 +33,8 @@ export function Footer() {
             </a>
           </p>
           <p className="text-sm text-muted">
-            <a href="mailto:hello@rsdetailing.com" className="hover:text-white">
-              hello@rsdetailing.com
+            <a href="mailto:hello@luxedrivedetailing.com" className="hover:text-white">
+              hello@luxedrivedetailing.com
             </a>
           </p>
         </div>
@@ -77,7 +77,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 max-w-6xl border-t border-white/10 px-4 pt-8 text-center text-xs text-muted md:px-6 md:text-left">
-        © {new Date().getFullYear()} RS Detailing LLC.
+        © {new Date().getFullYear()} LuxeDrive Detailing LLC.
       </div>
     </footer>
   )
