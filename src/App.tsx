@@ -53,7 +53,7 @@ export default function App() {
                 Mobile service
               </p>
               <h1 className="mt-4 text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl">
-                Get car detailing at your home
+                Mobile car detailing service in Orange County, CA.
               </h1>
               <p className="mt-6 max-w-xl text-lg text-white/75">
                 We restore, protect, and maintain — not just vacuum and rinse. Fully equipped pros, background-checked
