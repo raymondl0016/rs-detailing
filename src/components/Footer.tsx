@@ -33,8 +33,8 @@ export function Footer() {
             </a>
           </p>
           <p className="text-sm text-muted">
-            <a href="mailto:hello@luxedrivedetailing.com" className="hover:text-white">
-              hello@luxedrivedetailing.com
+            <a href="mailto:luxedrivedetailing888@gmail.com" className="hover:text-white">
+            luxedrivedetailing888@gmail.com
             </a>
           </p>
         </div>
