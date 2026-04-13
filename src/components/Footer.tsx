@@ -28,8 +28,8 @@ export function Footer() {
           <p className="text-xs font-bold uppercase tracking-widest text-accent">Contact Info</p>
           {/* <p className="mt-3 text-sm text-white/90">By appointment - call us for a quote</p> */}
           <p className="mt-4 text-sm font-medium text-white">
-            <a href="tel:+16265005486" className="hover:text-accent">
-              (626) 500-5486
+            <a href="tel:+9494247858" className="hover:text-accent">
+              (949) 424-7858
             </a>
           </p>
           <p className="text-sm text-muted">

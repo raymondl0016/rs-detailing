@@ -73,7 +73,7 @@ export default function App() {
                   View packages
                 </a>
                 <a
-                  href="tel:+6265005486"
+                  href="tel:+9494247858"
                   className="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
                 >
                   Call now
