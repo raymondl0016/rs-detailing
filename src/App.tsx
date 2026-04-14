@@ -154,46 +154,6 @@ export default function App() {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-surface py-16">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-              <div>
-                <h2 className="text-2xl font-bold text-white md:text-3xl">Licensed, insured, obsessed with consistency</h2>
-                <p className="mt-4 text-muted leading-relaxed">
-                  Over a decade refining the mobile + shop workflow. We plan arrivals, protect your property, and
-                  document results so expectations stay clear. Boats, RVs, and specialty vehicles welcome — ask when
-                  you book.
-                </p>
-                <ul className="mt-6 space-y-3 text-sm text-white/85">
-                  {[
-                    'Background-checked technicians',
-                    'Long hoses & extension cords on the truck',
-                    'Biodegradable chemistry where it makes sense',
-                    'Satisfaction-first communication',
-                  ].map((x) => (
-                    <li key={x} className="flex gap-2">
-                      <span className="text-accent">✓</span> {x}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-surface-2 p-8">
-                <p className="text-sm font-semibold uppercase tracking-wider text-accent">Detail packages</p>
-                <h3 className="mt-2 text-xl font-bold text-white">Book the level that fits</h3>
-                <p className="mt-3 text-sm text-muted">
-                  Full, exterior-only, interior-only, and specialty remediation. Tap any card for line-items.
-                </p>
-                <a
-                  href="#packages"
-                  className="mt-6 inline-flex rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/10"
-                >
-                  Jump to pricing cards
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="packages" className="bg-surface-2 py-20">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <h2 className="text-center text-3xl font-bold text-white md:text-4xl">Book a detail with us</h2>
